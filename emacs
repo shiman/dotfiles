@@ -7,10 +7,10 @@
              '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 (package-initialize)
 
-(setq default-directory "~/")
-
 (elpy-enable)
 
+(add-to-list 'load-path "~/.emacs.d/emacs-async")
+(add-to-list 'load-path "~/.emacs.d/helm")
 (require 'helm-config)
 
 (defadvice python-calculate-indentation (around outdent-closing-brackets)
@@ -33,6 +33,9 @@ they line up with the line containing the corresponding opening bracket."
 (ad-activate 'python-calculate-indentation)
 
 (setq make-backup-files nil)
+(setq ns-pop-up-frames nil)
+(global-linum-mode 1)
+(setq linum-format "%d ")
 
 ;; Changes from the GUI
 (custom-set-variables
