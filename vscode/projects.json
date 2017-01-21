@@ -1,0 +1,14 @@
+[
+	{
+		"name": "manlp",
+		"rootPath": "$home/github/manlp",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "dotfiles",
+		"rootPath": "$home/github/dotfiles",
+		"paths": [],
+		"group": ""
+	}
+]
