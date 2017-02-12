@@ -1,0 +1,6 @@
+{
+    "anaconda_linting": false,
+    "enable_signatures_tooltip": true,
+    "enable_docstrings_tooltip": false,
+    "merge_signatures_and_doc": false,
+}
