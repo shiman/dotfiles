@@ -25,4 +25,5 @@
     { "key": "alt+p", "command": "workbench.action.quickOpen" },
     { "key": "ctrl+alt+p", "command": "projectManager.listProjects" },
     { "key": "ctrl+q", "command": "" }
+    { "key": "ctrl+d", "command": "editor.action.addSelectionToNextFindMatch", "when": "editorFocus" }
 ]

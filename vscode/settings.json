@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true
+"files.insertFinalNewline": true,
+"window.zoomLevel": 0
 }

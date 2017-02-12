@@ -10,5 +10,17 @@
 		"rootPath": "$home/github/dotfiles",
 		"paths": [],
 		"group": ""
+	},
+	{
+		"name": "ChoppyServer",
+		"rootPath": "$home/github/choppy_wheels/ChoppyServer",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "itu_html",
+		"rootPath": "$home/itu/html-and-css",
+		"paths": [],
+		"group": ""
 	}
 ]
