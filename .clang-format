@@ -1,0 +1,9 @@
+BasedOnStyle: Google
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+ColumnLimit: 120
+Standard: Cpp11
+UseTab: Never
+AlignTrailingComments: true
+DerivePointerBinding: false
+PointerBindsToType: false
