@@ -11,4 +11,7 @@
     {"keys": ["alt+a"], "command": "select_all" },
     {"keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
     {"keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+    {"keys": ["ctrl+/"], "command": "undo"},
+    {"keys": ["alt+shift+["], "command": "sbp_pane_cmd", "args": {"cmd": "switch_tab", "direction": "left"}},
+    {"keys": ["alt+shift+]"], "command": "sbp_pane_cmd", "args": {"cmd": "switch_tab", "direction": "right"}},
 ]
