@@ -14,4 +14,6 @@
     {"keys": ["ctrl+/"], "command": "undo"},
     {"keys": ["alt+shift+["], "command": "sbp_pane_cmd", "args": {"cmd": "switch_tab", "direction": "left"}},
     {"keys": ["alt+shift+]"], "command": "sbp_pane_cmd", "args": {"cmd": "switch_tab", "direction": "right"}},
+    { "keys": ["f4"], "command": "find_under_expand" },
+    { "keys": ["alt+-"], "command": "jump_back" },
 ]
