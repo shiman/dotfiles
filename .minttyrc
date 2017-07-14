@@ -1,23 +1,27 @@
-# Base16 Monokai (https://github.com/chriskempson/base16)
-# Scheme: Wimer Hazenberg (http://www.monokai.nl)
+ForegroundColour=131, 148, 150
+BackgroundColour=  0,  43,  54
+CursorColour=    220,  50,  47
 
-BackgroundColour=39,40,34
-ForegroundColour=204,102,51
-CursorColour=244,191,117
+Black=             7,  54,  66
+BoldBlack=         0,  43,  54
+Red=             220,  50,  47
+BoldRed=         203,  75,  22
+Green=           133, 153,   0
+BoldGreen=        88, 110, 117
+Yellow=          181, 137,   0
+BoldYellow=      101, 123, 131
+Blue=             38, 139, 210
+BoldBlue=        131, 148, 150
+Magenta=         211,  54, 130
+BoldMagenta=     108, 113, 196
+Cyan=             42, 161, 152
+BoldCyan=        147, 161, 161
+White=           238, 232, 213
+BoldWhite=       253, 246, 227
 
-Black=39,40,34
-Red=56,56,48
-Green=73,72,62
-Yellow=117,113,94
-Blue=165,159,133
-Magenta=248,248,242
-Cyan=245,244,241
-White=249,248,245
-BoldBlack=249,38,114
-BoldRed=253,151,31
-BoldGreen=244,191,117
-BoldYellow=166,226,46
-BoldBlue=161,239,228
-BoldMagenta=102,217,239
-BoldCyan=174,129,255
-BoldWhite=204,102,51
+BoldAsFont=-1
+Scrollbar=none
+Term=xterm-256color
+BellType=0
+Font=Source Code Pro
+AllowBlinking=yes
