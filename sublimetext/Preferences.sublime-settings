@@ -1,20 +1,20 @@
 {
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Fira Code",
 	"font_size": 11,
 	"ignored_packages":
 	[
+		"Rust Enhanced",
 		"vintage"
 	],
 	"rulers":
 	[
 		140
 	],
-	"skin": "ayu/ayu mirage",
-	"theme": "ayu-mirage.sublime-theme",
+	"theme": "gruvbox (Dark) (Soft).sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"ui_fix_tab_labels": true,
 	"use_simple_full_screen": true
 }

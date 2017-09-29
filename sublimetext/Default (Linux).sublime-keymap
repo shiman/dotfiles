@@ -11,4 +11,6 @@
     {"keys": ["alt+a"], "command": "select_all" },
     {"keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
     {"keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+    {"keys": ["alt+shift+]"], "command": "next_view"},
+    {"keys": ["alt+shift+["], "command": "prev_view"},
 ]

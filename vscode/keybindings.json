@@ -1,29 +1,8 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "ctrl+p", "command": "cursorUp", "when": "editorTextFocus" },
-    { "key": "ctrl+n", "command": "cursorDown", "when": "editorTextFocus" },
-    { "key": "ctrl+b", "command": "cursorLeft",
-                       "when": "editorTextFocus" },
-    { "key": "ctrl+f", "command": "cursorRight",
-                       "when": "editorTextFocus" },
-    { "key": "ctrl+e", "command": "cursorEnd",
-                       "when": "editorTextFocus" },
-    { "key": "ctrl+a", "command": "cursorHome",
-                       "when": "editorTextFocus" },
-    { "key": "alt+n",  "command": "workbench.action.files.newUntitledFile" },
-    { "key": "alt+w",  "command": "workbench.action.closeActiveEditor" },
-    { "key": "alt+f",  "command": "actions.find" },
-    { "key": "alt+shift+f", "command": "workbench.action.findInFiles",
-                            "when": "!searchInputBoxFocus" },
-    { "key": "alt+shift+n", "command": "workbench.action.newWindow" },
-    { "key": "alt+a", "command": "editor.action.selectAll" },
-    { "key": "ctrl+[", "command": "editor.action.outdentLines",
-                       "when": "editorTextFocus && !editorReadonly" },
-    { "key": "ctrl+.", "command": "workbench.action.terminal.focus" },
-    { "key": "ctrl+k b", "command": "workbench.action.toggleSidebarVisibility" },
-    { "key": "ctrl+o", "command": "workbench.action.files.openFile" },
-    { "key": "alt+p", "command": "workbench.action.quickOpen" },
-    { "key": "ctrl+alt+p", "command": "projectManager.listProjects" },
-    { "key": "ctrl+q", "command": "" }
-    { "key": "ctrl+d", "command": "editor.action.addSelectionToNextFindMatch", "when": "editorFocus" }
+    { "key": "ctrl+k ctrl+b", "command": "workbench.action.toggleSidebarVisibility" },
+    { "key": "ctrl+q", "command": "" },
+    { "key": "ctrl+x k", "command": "workbench.action.closeActiveEditor" },
+    { "key": "alt+shift+]", "command": "workbench.action.nextEditor" },
+    { "key": "alt+shift+[", "command": "workbench.action.previousEditor" }
 ]
