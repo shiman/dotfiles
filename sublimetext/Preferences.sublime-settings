@@ -1,19 +1,17 @@
 {
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fira Code",
-	"font_size": 11,
+	"font_size": 12,
 	"ignored_packages":
 	[
-		"Rust Enhanced",
-		"vintage"
 	],
 	"rulers":
 	[
 		140
 	],
-	"theme": "gruvbox (Dark) (Soft).sublime-theme",
+	"theme": "Solarized Space Brick.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true
