@@ -2,7 +2,7 @@
 [
     { "key": "ctrl+k ctrl+b", "command": "workbench.action.toggleSidebarVisibility" },
     { "key": "ctrl+q", "command": "" },
-    { "key": "ctrl+x k", "command": "workbench.action.closeActiveEditor" },
+    { "key": "ctrl+x ctrl+k", "command": "workbench.action.closeActiveEditor" },
     { "key": "alt+shift+]", "command": "workbench.action.nextEditor" },
     { "key": "alt+shift+[", "command": "workbench.action.previousEditor" }
 ]

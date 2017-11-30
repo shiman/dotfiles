@@ -1,9 +1,9 @@
 {
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fira Code",
-	"font_size": 12,
+	"font_size": 14,
 	"ignored_packages":
 	[
 	],
@@ -11,7 +11,7 @@
 	[
 		140
 	],
-	"theme": "Solarized Space Brick.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true

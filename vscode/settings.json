@@ -1,15 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
   "files.trimTrailingWhitespace": true,
-"files.insertFinalNewline": true,
-"window.zoomLevel": 0,
-"rust.rustup": {
-  "toolchain": "stable-x86_64-unknown-linux-gnu",
-  "nightlyToolchain": "nightly-x86_64-unknown-linux-gnu"
-},
-"rust.mode": "rls",
-"rust.rls": {
-  "useRustfmt": true
-},
-"workbench.colorTheme": "Monokai"
+  "files.insertFinalNewline": true,
+  "window.zoomLevel": 0,
+  "material-icon-theme.showWelcomeMessage": false,
+  "workbench.colorTheme": "Quiet Light",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Fira Mono"
 }
