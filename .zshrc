@@ -172,3 +172,12 @@ setopt HIST_VERIFY # Don't execute immediately upon history expansion.
 # ignore complition
 zstyle ':completion:*:complete:-command-:*:*' ignored-patterns '*.pdf|*.exe|*.dll'
 zstyle ':completion:*:*sh:*:' tag-order files
+
+export RUSTUP_DIST_SERVER=http://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=http://mirrors.ustc.edu.cn/rust-static/rustup
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+xset r rate 220 40
