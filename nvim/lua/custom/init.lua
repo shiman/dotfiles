@@ -12,7 +12,7 @@ opt.scrolloff = 10
 opt.relativenumber = true
 opt.wrap = false
 
-g.mapleader = ","
+-- g.mapleader = ","
 
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {
