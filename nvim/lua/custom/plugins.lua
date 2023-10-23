@@ -60,6 +60,11 @@ local plugins = {
 		cmd = { "LazyGit" },
 	},
 
+	{
+		"vim-test/vim-test",
+		lazy = false,
+	},
+
 	-- To make a plugin not be loaded
 	-- {
 	--   "NvChad/nvim-colorizer.lua",
