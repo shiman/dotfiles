@@ -1,0 +1,13 @@
+[tools]
+fd = "latest"
+fzf = "latest"
+lazygit = "latest"
+neovim = "latest"
+node = "22"
+pre-commit = "latest"
+ripgrep = "latest"
+rust = "latest"
+starship = "latest"
+uv = "latest"
+zellij = "latest"
+zoxide = "latest"

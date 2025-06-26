@@ -1,0 +1,201 @@
+# set modifier
+set $super Mod4
+set $alt Mod1
+
+# set font
+font pango:feathericons 9, Poppins Regular 9
+
+# Use mouse+$super to drag floating windows to their wanted position
+floating_modifier $super
+
+# autostart
+exec --no-startup-id xwallpaper --zoom ~/Pictures/Wallpapers/4ai8wekag7i61.jpg
+exec --no-startup-id xset r rate 200 50
+exec --no-startup-id ibus-daemon -drx
+exec --no-startup-id greenclip daemon
+
+# Connect the wide screen.
+bindsym $super+F12 exec xrandr --output eDP-1-1 --mode 1920x1200 --primary --output DP-3 --mode 3440x1440 --right-of eDP-1-1
+
+# Refresh the wallpaper.
+bindsym $super+F5 exec xwallpaper --zoom ~/Pictures/Wallpapers/4ai8wekag7i61.jpg
+
+# start a terminal
+bindsym $super+Return exec i3-sensible-terminal
+
+# start dmenu (a program launcher)
+# bindsym $super+d exec i3-dmenu-desktop --dmenu="dmenu -i -b \
+# -fn 'Poppins:size=9' -nb '#f9faf4' -nf '#3b4d4f' \
+# -sb '#68c7c1' -sf '#3b4d4f'"
+bindsym $alt+space exec rofi -show
+bindsym $super+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+# common apps keybinds
+bindsym $alt+F1 exec env -u SESSION_MANAGER flameshot gui
+bindsym $super+$alt+l exec i3lock -c 222222 && xset dpms force off
+
+# change volume and brightness
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# kill focused window
+bindsym $super+c kill
+bindsym $alt+F4 kill
+
+# change focus
+bindsym $super+h focus left
+bindsym $super+j focus down
+bindsym $super+k focus up
+bindsym $super+l focus right
+bindsym $super+Left focus left
+bindsym $super+Down focus down
+bindsym $super+Up focus up
+bindsym $super+Right focus right
+
+# move focused window
+bindsym $super+Shift+Left move left
+bindsym $super+Shift+Down move down
+bindsym $super+Shift+Up move up
+bindsym $super+Shift+Right move right
+
+# split in horizontal or vertical orientation
+bindsym $super+backslash split h
+bindsym $super+minus split v
+
+bindsym $super+e layout toggle split
+bindsym $super+s layout stacking
+bindsym $super+w layout tabbed
+
+# enter fullscreen mode for the focused container
+bindsym $super+f fullscreen toggle
+
+# toggle tiling / floating
+bindsym $super+$alt+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $super+Shift+space focus mode_toggle
+
+# switch to workspace
+bindsym $super+Control+Right workspace next
+bindsym $super+Control+Left workspace prev
+bindsym $super+1 workspace 1:I
+bindsym $super+2 workspace 2:II
+bindsym $super+3 workspace 3:III
+bindsym $super+4 workspace 4:IV
+bindsym $super+5 workspace 5:V
+bindsym $super+6 workspace 6:VI
+bindsym $super+7 workspace 7:VII
+bindsym $super+8 workspace 8:VIII
+bindsym $super+9 workspace 9:IX
+bindsym $super+0 workspace 10:X
+
+# move focused container to workspace
+bindsym $super+Shift+1 move container to workspace 1:I
+bindsym $super+Shift+2 move container to workspace 2:II
+bindsym $super+Shift+3 move container to workspace 3:III
+bindsym $super+Shift+4 move container to workspace 4:IV
+bindsym $super+Shift+5 move container to workspace 5:V
+bindsym $super+Shift+6 move container to workspace 6:VI
+bindsym $super+Shift+7 move container to workspace 7:VII
+bindsym $super+Shift+8 move container to workspace 8:VIII
+bindsym $super+Shift+9 move container to workspace 9:IX
+bindsym $super+Shift+0 move container to workspace 10:X
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $super+BackSpace exec "i3-msg restart"
+
+# exit i3
+bindsym $super+q exec "i3-nagbar -t warning -m 'Really, exit?' \
+-b 'Yes' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+	bindsym Left resize shrink width 5 px or 5 ppt
+	bindsym Down resize grow height 5 px or 5 ppt
+	bindsym Up resize shrink height 5 px or 5 ppt
+	bindsym Right resize grow width 5 px or 5 ppt
+	bindsym Return mode "default"
+	}
+bindsym $super+r mode "resize"
+
+bar {
+  status_command /home/shim/.cargo/bin/i3status-rs
+  position top
+  workspace_min_width 24
+  strip_workspace_numbers yes
+
+  colors {
+    background #f9faf4
+    statusline #3b4d4f
+    separator #f9faf4
+
+    # colour of border, background, and text
+    focused_workspace #f9faf4 #68c7c1 #3b4d4f
+    active_workspace #f9faf4 #f9faf4 #3b4d4f
+    inactive_workspace #f9faf4 #f9faf4 #3b4d4f
+    urgent_workspace #f9faf4 #e46c6d #3b4d4f
+  }
+}
+
+# # panel
+# bar {
+# 	status_command i3status
+# 	position top
+# 	workspace_min_width 24
+# 	strip_workspace_numbers yes
+# 
+# 	colors {
+# 	background #f9faf4
+# 	statusline #3b4d4f
+# 	separator #f9faf4
+# 
+# 	# colour of border, background, and text
+# 	focused_workspace #f9faf4 #68c7c1 #3b4d4f
+# 	active_workspace #f9faf4 #f9faf4 #3b4d4f
+# 	inactive_workspace #f9faf4 #f9faf4 #3b4d4f
+# 	urgent_workspace #f9faf4 #e46c6d #3b4d4f
+# 	}
+# }
+
+# # colour of border, background, text, indicator, and child_border
+# client.focused #e46c6d #dbd9da #3b4d4f #b899a8 #819fc1
+# client.focused_inactive #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
+# client.unfocused #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
+# client.urgent #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
+# client.placeholder #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
+# client.background #dbd9da
+
+# window rules, you can find the window class using xprop
+for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
+for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
+for_window [class=".*"] border pixel 8
+hide_edge_borders smart
+
+gaps inner 10
+gaps outer 10
+
+# ---------- 色彩定义 ----------
+set $c_focus_border    #ffcc00
+set $c_focus_text      #000000
+set $c_inactive_border #444444
+set $c_inactive_text   #ffffff
+
+# ---------- 边框样式 ----------
+default_border pixel 3
+default_floating_border pixel 3
+hide_edge_borders smart
+
+# ---------- 焦点窗口颜色（tab active 状态）----------
+client.focused          $c_focus_border $c_focus_border $c_focus_text $c_focus_border
+
+# ---------- 当前容器中非焦点窗口（tab inactive 状态）----------
+client.focused_inactive $c_inactive_border $c_inactive_border $c_inactive_text $c_inactive_border
+
+# ---------- 完全未聚焦窗口 ----------
+client.unfocused        $c_inactive_border $c_inactive_border $c_inactive_text $c_inactive_border
+
+# ---------- 紧急窗口 ----------
+client.urgent           #ff5555 #ff5555 $c_inactive_text #ff5555
